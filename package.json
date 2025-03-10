@@ -1,6 +1,6 @@
 {
     "name": "@smooai/library-template",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "private": true,
     "description": "SmooAI Library Template",
     "homepage": "https://github.com/SmooAI/library-template#readme",
