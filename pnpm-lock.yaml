@@ -31,6 +31,9 @@ importers:
       '@vercel/style-guide':
         specifier: ^6.0.0
         version: 6.0.0(@next/eslint-plugin-next@14.2.24)(eslint@9.22.0)(prettier@3.5.3)(typescript@5.8.2)(vitest@3.0.8(@types/node@20.17.24))
+      eslint:
+        specifier: ^9.21.0
+        version: 9.22.0
       husky:
         specifier: ^9.1.7
         version: 9.1.7
