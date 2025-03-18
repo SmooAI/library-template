@@ -22,7 +22,7 @@
     "scripts": {
         "build": "pnpm create-entry-points -i \"src/**/*.ts\" && pnpm tsup",
         "check-all": "pnpm run typecheck && pnpm run lint && pnpm run test && pnpm run build",
-        "ci:publish": "pnpm publish -r",
+        "ci:publish": "pnpm build && pnpm changeset publish",
         "format": "prettier --write \"**/*.{ts,tsx,md,json,js,cjs,mjs}\"",
         "lint": "eslint src/",
         "lint:fix": "eslint src/ --fix",
@@ -33,7 +33,7 @@
     },
     "dependencies": {
         "@smooai/logger": "^1.0.14",
-        "@smooai/utils": "^1.0.2"
+        "@smooai/utils": "^1.0.11"
     },
     "devDependencies": {
         "@changesets/cli": "^2.28.1",
