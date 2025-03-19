@@ -1,5 +1,11 @@
 # @smooai/library-template
 
+## 1.0.4
+
+### Patch Changes
+
+- 19a5fd7: Upgraded to Node 22.
+
 ## 1.0.3
 
 ### Patch Changes
