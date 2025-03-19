@@ -1,5 +1,11 @@
 # @smooai/library-template
 
+## 1.0.5
+
+### Patch Changes
+
+- d4fa579: Upgrade node types to v22.
+
 ## 1.0.4
 
 ### Patch Changes
