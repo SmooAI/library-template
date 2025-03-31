@@ -1,5 +1,11 @@
 # @smooai/library-template
 
+## 1.0.7
+
+### Patch Changes
+
+- 2acd2b0: Updated all vite dependencies.
+
 ## 1.0.6
 
 ### Patch Changes
