@@ -1,5 +1,11 @@
 # @smooai/library-template
 
+## 1.0.8
+
+### Patch Changes
+
+- a14401d: Update smoo dependencies and prettier.
+
 ## 1.0.7
 
 ### Patch Changes
