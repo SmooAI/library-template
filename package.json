@@ -35,7 +35,7 @@
         "build": "pnpm create-entry-points -i \"src/**/*.ts\" && pnpm tsup",
         "check-all": "pnpm run typecheck && pnpm run lint && pnpm run test && pnpm run build",
         "ci:publish": "pnpm build && pnpm changeset publish",
-        "format": "prettier --write \"src/**/*.{ts,tsx,md,json,js,cjs,mjs}\"",
+        "format": "prettier --write \"**/*.{ts,tsx,md,json,js,cjs,mjs}\"",
         "lint": "eslint src/",
         "lint:fix": "eslint src/ --fix",
         "prepare": "husky",
