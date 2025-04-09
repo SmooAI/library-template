@@ -1,5 +1,11 @@
 # @smooai/library-template
 
+## 1.0.9
+
+### Patch Changes
+
+- b5396ac: Update readme.
+
 ## 1.0.8
 
 ### Patch Changes
