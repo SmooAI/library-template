@@ -13,11 +13,11 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0(@types/node@22.13.10)(typescript@5.8.2)
       '@smooai/logger':
-        specifier: ^1.2.2
-        version: 1.2.2
-      '@smooai/utils':
         specifier: ^1.2.3
-        version: 1.2.3(@types/node@22.13.10)(typescript@5.8.2)
+        version: 1.2.3
+      '@smooai/utils':
+        specifier: ^1.2.6
+        version: 1.2.6(@types/node@22.13.10)(typescript@5.8.2)
     devDependencies:
       '@changesets/cli':
         specifier: ^2.28.1
@@ -26,8 +26,8 @@ importers:
         specifier: ^4.4.1
         version: 4.4.1(prettier@3.5.3)
       '@smooai/config-eslint':
-        specifier: ^1.0.13
-        version: 1.0.13(@eslint/js@9.22.0)(@next/eslint-plugin-next@14.2.24)(@vercel/style-guide@6.0.0(@next/eslint-plugin-next@14.2.24)(eslint@9.22.0)(prettier@3.5.3)(typescript@5.8.2)(vitest@3.1.1(@types/node@22.13.10)(yaml@2.7.0)))(eslint-config-prettier@10.1.1(eslint@9.22.0))(eslint-plugin-only-warn@1.1.0)(eslint-plugin-react-hooks@5.2.0(eslint@9.22.0))(eslint-plugin-react-refresh@0.4.19(eslint@9.22.0))(eslint-plugin-react@7.37.4(eslint@9.22.0))(eslint-plugin-turbo@2.4.4(eslint@9.22.0)(turbo@2.4.4))(eslint@9.22.0)(prettier-plugin-packagejson@2.5.10(prettier@3.5.3))(prettier@3.5.3)(typescript-eslint@8.26.0(eslint@9.22.0)(typescript@5.8.2))(typescript@5.8.2)
+        specifier: ^1.0.16
+        version: 1.0.16(@eslint/js@9.22.0)(@next/eslint-plugin-next@14.2.24)(@vercel/style-guide@6.0.0(@next/eslint-plugin-next@14.2.24)(eslint@9.22.0)(prettier@3.5.3)(typescript@5.8.2)(vitest@3.1.1(@types/node@22.13.10)(yaml@2.7.0)))(eslint-config-prettier@10.1.1(eslint@9.22.0))(eslint-plugin-depend@1.2.0)(eslint-plugin-only-warn@1.1.0)(eslint-plugin-react-hooks@5.2.0(eslint@9.22.0))(eslint-plugin-react-refresh@0.4.19(eslint@9.22.0))(eslint-plugin-react@7.37.4(eslint@9.22.0))(eslint-plugin-turbo@2.4.4(eslint@9.22.0)(turbo@2.4.4))(eslint@9.22.0)(prettier-plugin-packagejson@2.5.10(prettier@3.5.3))(prettier@3.5.3)(typescript-eslint@8.26.0(eslint@9.22.0)(typescript@5.8.2))(typescript@5.8.2)
       '@smooai/config-typescript':
         specifier: ^1.0.16
         version: 1.0.16(typescript@5.8.2)
@@ -1264,8 +1264,8 @@ packages:
     resolution: {integrity: sha512-JtaY3FxmD+te+KSI2FJuEcfNC9T/DGGVf551babM7fAaXhjJUt7oSYurH1Devxd2+BOSUACCgt3buinx4UnmEA==}
     engines: {node: '>=18.0.0'}
 
-  '@smooai/config-eslint@1.0.13':
-    resolution: {integrity: sha512-nDrFBGIQ1WwLIb13aWU92V2HrI/9E1xADvJpKwOiEhxI4FCV/N5oVMUKNB7p+c2adTTjkENCEdxeTrU/iqixcw==}
+  '@smooai/config-eslint@1.0.16':
+    resolution: {integrity: sha512-azFQGxIX2RPW4K8rS0xoi6AcDYiDvYcIRWxBp3BEGvCbgyvBfGSr+VgNd57W4dFmQFChHnE2TIq7hubNojOPaw==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       '@eslint/js': ^9.21.0
@@ -1273,6 +1273,7 @@ packages:
       '@vercel/style-guide': ^6.0.0
       eslint: ^9.21.0
       eslint-config-prettier: ^10.0.2
+      eslint-plugin-depend: ^1.2.0
       eslint-plugin-only-warn: ^1.1.0
       eslint-plugin-react: ^7.37.4
       eslint-plugin-react-hooks: ^5.2.0
@@ -1289,18 +1290,18 @@ packages:
     peerDependencies:
       typescript: ^5.8.2
 
-  '@smooai/fetch@1.5.0':
-    resolution: {integrity: sha512-lVZHcdxqNWnOjsm1LHCsbqk7nnCHJXWPyKvnC8VYGtubA8WF9lqcJELaycFANwtqI0m3W6b2IsNiRqQFA/2xXg==}
+  '@smooai/fetch@1.6.0':
+    resolution: {integrity: sha512-oi1H7AWQO9N6Q9pd9PUhA197SaD/GjbUAV3ZRxIcCHockdt+JIlC5cS60PVLUQnwkLsbgEiSGXNe78+1FPjNRw==}
 
   '@smooai/file@1.1.0':
     resolution: {integrity: sha512-Kl8ID8ZnY+sy+4QUJ1H+bq3cEPXTppr7wFbyKvIDMppbycU4kOfjKibeE9oFmTbAS7zZiG0S/pB0DyUFyzPzgA==}
 
-  '@smooai/logger@1.2.2':
-    resolution: {integrity: sha512-VaKQ6LpKDVcOtlkNaYih9s1F5/mt0OSvyQ7tZkASEBZc14WtNsZkeiKHvd68t45KXegBl1fZyOVdZVIscakH5A==}
+  '@smooai/logger@1.2.3':
+    resolution: {integrity: sha512-tnqltNaNITdXGee9kHqmeAcijkJYmtC089hsOPT6uhS1IH4q9Vlkf5AimjWafNKUtDBB+kIe5BtLrBACNP8krA==}
     engines: {node: '>=20.0.0'}
 
-  '@smooai/utils@1.2.3':
-    resolution: {integrity: sha512-BKy0SgDEPYyLTcwlyDOH8I0aQhzonqbqtpyV/hdhufbb4EcjmWzJpayDnWaUomteN3HLuVNCBb1rYviJ380cXg==}
+  '@smooai/utils@1.2.6':
+    resolution: {integrity: sha512-vXzXKT8eQkvou2zw5t2axPMfepdx/z5rHz3oKOgFZBMRf1i3xgMgIildm+y4qn/hnWx6oCGNpc+fjX+c360sKA==}
     engines: {node: '>=20.0.0'}
     hasBin: true
 
@@ -2079,6 +2080,9 @@ packages:
       eslint-import-resolver-webpack:
         optional: true
 
+  eslint-plugin-depend@1.2.0:
+    resolution: {integrity: sha512-nbG8AOTYk43kM/SLCFLNW8tvAssF3rrvE5W5dWLP9/joNdAvzJLMuTEx9GIahoRYVTFCQYLejg2tll0USSvFHg==}
+
   eslint-plugin-eslint-comments@3.2.0:
     resolution: {integrity: sha512-0jkOl0hfojIHHmEHgmNdqv4fmh7300NdpA9FFpF7zaoLvB/QeXOGNLIo86oAveJFrfB1p05kC8hpEMHM8DwWVQ==}
     engines: {node: '>=6.5.0'}
@@ -2291,6 +2295,9 @@ packages:
 
   fastq@1.19.1:
     resolution: {integrity: sha512-GwLTyxkCXjXbxqIhTsMI2Nui8huMPtnxg7krajPJAjnEG/iiOS7i+zCtWGZR9G0NBKbXKh6X9m9UIsYX/N6vvQ==}
+
+  fd-package-json@1.2.0:
+    resolution: {integrity: sha512-45LSPmWf+gC5tdCQMNH4s9Sr00bIkiD9aN7dc5hqkrEw1geRYyDQS1v1oMHAW3ysfxfndqGsrDREHHjNNbKUfA==}
 
   fdir@6.4.3:
     resolution: {integrity: sha512-PMXmW2y1hDDfTSRc9gaXIuCCRpuoz3Kaz8cUelp3smouvfT632ozg2vrT6lJsHKKOF59YLbOGfAWGUcKEfRMQw==}
@@ -2905,6 +2912,9 @@ packages:
   minipass@7.1.2:
     resolution: {integrity: sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==}
     engines: {node: '>=16 || 14 >=14.17'}
+
+  module-replacements@2.8.0:
+    resolution: {integrity: sha512-ecTdT19nf+jYxPhXNCUuopDwazNOfcEW/GVlRmVxFO/zWcFFedso+pV4GbJ0TKjI+su3htyghhCJJ99ZAkuUyg==}
 
   mollitia@0.1.1:
     resolution: {integrity: sha512-gb1fuggQqWtyHCgMjLM1RvSA9fV1tWihMamUXqxcHWkJBaMEfSS7DGpaUV3tt8G7LfJu54I7nPP/CvQNe5+K7A==}
@@ -4012,6 +4022,9 @@ packages:
         optional: true
       jsdom:
         optional: true
+
+  walk-up-path@3.0.1:
+    resolution: {integrity: sha512-9YlCL/ynK3CTlrSRrDxZvUauLzAswPCrsaCgilqFevUYpeEW0/3ScEjaa3kbW/T0ghhkEr7mv+fpjqn1Y1YuTA==}
 
   webidl-conversions@4.0.2:
     resolution: {integrity: sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==}
@@ -5760,13 +5773,14 @@ snapshots:
       '@smithy/types': 4.2.0
       tslib: 2.8.1
 
-  '@smooai/config-eslint@1.0.13(@eslint/js@9.22.0)(@next/eslint-plugin-next@14.2.24)(@vercel/style-guide@6.0.0(@next/eslint-plugin-next@14.2.24)(eslint@9.22.0)(prettier@3.5.3)(typescript@5.8.2)(vitest@3.1.1(@types/node@22.13.10)(yaml@2.7.0)))(eslint-config-prettier@10.1.1(eslint@9.22.0))(eslint-plugin-only-warn@1.1.0)(eslint-plugin-react-hooks@5.2.0(eslint@9.22.0))(eslint-plugin-react-refresh@0.4.19(eslint@9.22.0))(eslint-plugin-react@7.37.4(eslint@9.22.0))(eslint-plugin-turbo@2.4.4(eslint@9.22.0)(turbo@2.4.4))(eslint@9.22.0)(prettier-plugin-packagejson@2.5.10(prettier@3.5.3))(prettier@3.5.3)(typescript-eslint@8.26.0(eslint@9.22.0)(typescript@5.8.2))(typescript@5.8.2)':
+  '@smooai/config-eslint@1.0.16(@eslint/js@9.22.0)(@next/eslint-plugin-next@14.2.24)(@vercel/style-guide@6.0.0(@next/eslint-plugin-next@14.2.24)(eslint@9.22.0)(prettier@3.5.3)(typescript@5.8.2)(vitest@3.1.1(@types/node@22.13.10)(yaml@2.7.0)))(eslint-config-prettier@10.1.1(eslint@9.22.0))(eslint-plugin-depend@1.2.0)(eslint-plugin-only-warn@1.1.0)(eslint-plugin-react-hooks@5.2.0(eslint@9.22.0))(eslint-plugin-react-refresh@0.4.19(eslint@9.22.0))(eslint-plugin-react@7.37.4(eslint@9.22.0))(eslint-plugin-turbo@2.4.4(eslint@9.22.0)(turbo@2.4.4))(eslint@9.22.0)(prettier-plugin-packagejson@2.5.10(prettier@3.5.3))(prettier@3.5.3)(typescript-eslint@8.26.0(eslint@9.22.0)(typescript@5.8.2))(typescript@5.8.2)':
     dependencies:
       '@eslint/js': 9.22.0
       '@next/eslint-plugin-next': 14.2.24
       '@vercel/style-guide': 6.0.0(@next/eslint-plugin-next@14.2.24)(eslint@9.22.0)(prettier@3.5.3)(typescript@5.8.2)(vitest@3.1.1(@types/node@22.13.10)(yaml@2.7.0))
       eslint: 9.22.0
       eslint-config-prettier: 10.1.1(eslint@9.22.0)
+      eslint-plugin-depend: 1.2.0
       eslint-plugin-only-warn: 1.1.0
       eslint-plugin-react: 7.37.4(eslint@9.22.0)
       eslint-plugin-react-hooks: 5.2.0(eslint@9.22.0)
@@ -5781,11 +5795,11 @@ snapshots:
     dependencies:
       typescript: 5.8.2
 
-  '@smooai/fetch@1.5.0(@types/node@22.13.10)(typescript@5.8.2)':
+  '@smooai/fetch@1.6.0(@types/node@22.13.10)(typescript@5.8.2)':
     dependencies:
       '@faker-js/faker': 9.8.0
-      '@smooai/logger': 1.2.2
-      '@smooai/utils': 1.2.3(@types/node@22.13.10)(typescript@5.8.2)
+      '@smooai/logger': 1.2.3
+      '@smooai/utils': 1.2.6(@types/node@22.13.10)(typescript@5.8.2)
       '@standard-schema/spec': 1.0.0
       '@standard-schema/utils': 0.3.0
       lodash.merge: 4.6.2
@@ -5803,9 +5817,9 @@ snapshots:
       '@aws-sdk/client-s3': 3.812.0
       '@aws-sdk/s3-request-presigner': 3.812.0
       '@file-type/xml': 0.4.3
-      '@smooai/fetch': 1.5.0(@types/node@22.13.10)(typescript@5.8.2)
-      '@smooai/logger': 1.2.2
-      '@smooai/utils': 1.2.3(@types/node@22.13.10)(typescript@5.8.2)
+      '@smooai/fetch': 1.6.0(@types/node@22.13.10)(typescript@5.8.2)
+      '@smooai/logger': 1.2.3
+      '@smooai/utils': 1.2.6(@types/node@22.13.10)(typescript@5.8.2)
       content-disposition: 0.5.4
       file-type: 20.5.0
       formdata-node: 6.0.3
@@ -5819,7 +5833,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@smooai/logger@1.2.2':
+  '@smooai/logger@1.2.3':
     dependencies:
       '@aws-sdk/client-sqs': 3.812.0
       '@opentelemetry/api': 1.9.0
@@ -5835,12 +5849,12 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@smooai/utils@1.2.3(@types/node@22.13.10)(typescript@5.8.2)':
+  '@smooai/utils@1.2.6(@types/node@22.13.10)(typescript@5.8.2)':
     dependencies:
       '@oclif/core': 2.16.0(@types/node@22.13.10)(typescript@5.8.2)
       '@oclif/plugin-help': 6.2.28
       '@oclif/plugin-plugins': 5.4.38
-      '@smooai/logger': 1.2.2
+      '@smooai/logger': 1.2.3
       '@standard-schema/spec': 1.0.0
       '@standard-schema/utils': 0.3.0
       find-up: 7.0.0
@@ -6780,6 +6794,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  eslint-plugin-depend@1.2.0:
+    dependencies:
+      fd-package-json: 1.2.0
+      module-replacements: 2.8.0
+      semver: 7.7.2
+
   eslint-plugin-eslint-comments@3.2.0(eslint@9.22.0):
     dependencies:
       escape-string-regexp: 1.0.5
@@ -7077,6 +7097,10 @@ snapshots:
   fastq@1.19.1:
     dependencies:
       reusify: 1.1.0
+
+  fd-package-json@1.2.0:
+    dependencies:
+      walk-up-path: 3.0.1
 
   fdir@6.4.3(picomatch@4.0.2):
     optionalDependencies:
@@ -7668,6 +7692,8 @@ snapshots:
   minimist@1.2.8: {}
 
   minipass@7.1.2: {}
+
+  module-replacements@2.8.0: {}
 
   mollitia@0.1.1: {}
 
@@ -8698,6 +8724,8 @@ snapshots:
       - terser
       - tsx
       - yaml
+
+  walk-up-path@3.0.1: {}
 
   webidl-conversions@4.0.2: {}
 
